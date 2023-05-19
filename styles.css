@@ -1,0 +1,129 @@
+html,body{
+    background-color: #1f1f1f;
+    color: #d8d2d2;
+    font-family: "Open Sans", Arial, sans-serif;
+    height: 100vh; /* set the height of the container */
+    overflow: auto;
+}
+#navbar{
+    font-weight: 200% ;
+    position: fixed ;
+    min-width: 280px;
+    max-width: 300px;
+    top:0px;
+    left:0px;
+    height:100%;
+    border-right: solid;
+    border-color: #ffffff;
+}
+
+#navbar header{
+    text-align: center;
+    margin-top: 5px;
+    padding:20px ;
+    font-size: 30px;
+    color: #6288a9;
+    font-weight: bold ;
+}
+#main-doc header{
+    font-size: 2rem;
+    color: #6288a9;
+    
+}
+
+#navbar ul{
+    height: 88%;
+    padding:0;
+    overflow-x: hidden;  
+    overflow-y: auto;
+} 
+
+#navbar li{
+    display: block;
+    position: relative;
+    width:100%;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+#main-doc{
+    position: absolute;
+    margin-left:310px;
+    padding: 20px;
+    margin-bottom: 110px;
+    font-size: 16px;
+}
+section li{
+    margin: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width:815px)
+{   
+    #navbar ul{
+        border: 3px solid #161652;
+        height: 207px;
+        border-radius: 15px;
+        margin: 5px ;
+    }
+
+    #navbar{
+        background-color: #1f1f1f;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+    }
+    #main-doc{
+        margin-left: 0px;
+        margin-top: 310px;
+    }
+}
+
+nav{
+    display: block;
+}
+
+#navbar a:hover{
+    background-color: #91b3d0;
+    color: #000000;
+    border-radius: 10px;
+}
+
+ul{
+    display: block;
+    padding:3px 5px;
+    margin: 10px 10px;
+}
+main{
+    display: block;
+}
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #3e3636;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    /* Apply the smooth scrolling behavior only if the user has not requested reduced motion */
+    *{
+      scroll-behavior: smooth;
+    }
+}
